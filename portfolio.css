@@ -253,6 +253,50 @@ ul {
     right: -5px;
 }
 
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding-bottom: 50px;
+    padding-top: 50px;
+    gap: 100px;
+}
+
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+}
+
+.edu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'cmu uta iit'
+    ;
+    align-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#uta-img, #cmu-img, #iit-img {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+
+#cmu {
+    grid-area: cmu;
+}
+
+#uta {
+    grid-area: uta;
+}
+
+#iit {
+    grid-area: iit;
+}
+
 @media screen and (max-width: 1200px) {
     .main-container {
         width: 95%;
@@ -267,11 +311,22 @@ ul {
             'nav-wrapper'
             'left-column' 
             'right-column'
-    
         ;
     }
 
     .right-column {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .edu {        
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 3em 30em; */
+        grid-template-areas: 
+            'cmu'
+            'uta' 
+            'iit'
+        ;
     }
 }
