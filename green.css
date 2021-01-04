@@ -1,15 +1,28 @@
 :root{
-	--mainColor:#606B56;
-	--secondaryColor:#515a48;
+	--mainColor: #9EC9A8;
+	--mainShadow:    12px 12px 24px #99c3a3, 
+             -12px -12px 24px #a3cfad;
+    --mainRadius: 5px 5px 0 0;
 
-	--borderColor:#161914;
 
-	--mainText:#fff;
-	--secondaryText:#eeeeee;
+	--secondaryColor: #b7e6c2;
+	--secondaryShadow:  12px 12px 24px #b2dfbc, 
+             -12px -12px 24px #bcedc8;
+	--secondaryRadius: 5px;;
 
-	--themeDotBorder:#FFF;
-	--previewBg:rgb(81, 90, 72, 0.8);
-	--previewShadow:#2a2f25;
+	--borderColor: #86E6A1;
 
-	--submitBtn:#669966;
+	--mainText: rgb(3, 43, 95);
+	--secondaryText: #4b5156;
+
+	--themeDotBorder: rgb(3, 43, 95);
+
+	--previewBG: #8dbe9e;
+	--previewShadow: #72b68a;
+
+	--inputField:  inset 8px 8px 24px #b0ddba, 
+            inset -8px -8px 24px #beefca;
+
+	--submitBtn: #9EC9A8;
+
 }

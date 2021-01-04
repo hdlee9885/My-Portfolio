@@ -72,9 +72,26 @@ ul {
 
     justify-content: center;
     align-content: center;
-    border: 2px dashed lightcoral;
+    /* border: 2px dashed lightcoral; */
     min-height: 10em;
 }
+
+.top {
+    white-space: nowrap;
+    overflow: hidden;    
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+@keyframes animated-text{
+    from{ width: 0; }
+    to{ width: 520px; }
+}
+  
+@keyframes animated-cursor{
+    from{border-right-color: rgba(0,255,0,.75);}
+    to{border-right-color: transparent;}
+  }
 
 .intro-wrapper {
     background-color: var(--secondaryColor);
@@ -152,9 +169,10 @@ ul {
 .profile-pic {
     display: block;
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
+    border-radius: 50%;
     border: 2px solid var(--borderColor);
 }
 
@@ -197,6 +215,10 @@ ul {
 
 #purple-mode {
 	background-color: #7E4C74;
+}
+
+#orange-mode {
+    background-color: #ecb679;
 }
 
 #settings-note {
@@ -347,7 +369,8 @@ ul {
 }
 
 #submit-btn{
-	margin-top: 10px;
+    margin-top: 10px;
+    font-size: 16px;
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom:10px; 
