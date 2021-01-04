@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <link id="theme-style" rel="stylesheet" type="text/css" href="">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -40,10 +41,10 @@
                         <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
 
                         <div id="theme-wrapper">
-                            <div id="light-mode" class="theme-dot"></div>
-                            <div id="blue-mode" class="theme-dot"></div>
-                            <div id="green-mode" class="theme-dot"></div>
-                            <div id="purple-mode" class="theme-dot"></div>
+                            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                         </div>
 
                         <p id="settings-note">*Theme Settings Will Be Saved For Your Next Visit</p>
@@ -145,7 +146,7 @@
                     
                     <div>
                         <div class="post">
-                            <img class="thumbnail" src="images/researchmatch-logo.png">
+                            <img class="thumbnail" src="images/researchmatch-logo.jpeg">
                             <div class="project-preview">
                                 <h6 class="project-title">ResearchMatch Website</h6>
                                 <p class="project-intro">Project Intro</p>
@@ -171,10 +172,25 @@
 
         <section class="s2">
             <div class="main-container">
-                Contact Me
-                
+                <h3 style="text-align: center;">Contact Me</h3>
+                <form id="contact-form" action="">
+                    <label>Name</label>
+                    <input type="text" class="input-field" name="Name">
+
+                    <label>Subject</label>
+                    <input type="text" class="input-field" name="Subject">
+
+                    <label>Email</label>
+                    <input type="text" class="input-field" name="Email">
+
+                    <label>Message</label>
+                    <textarea type="text" class="input-field" name="Message"></textarea>
+            
+                    <input type="submit" value="Send" id="submit-btn">
+                </form>
+
             </div>
         </section>
-        <script src="" async defer></script>
+        <script type="text/javascript" src="theme.js"></script>
     </body>
 </html>
