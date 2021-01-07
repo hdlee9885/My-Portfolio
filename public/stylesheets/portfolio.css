@@ -64,6 +64,8 @@ ul {
 
 .main-container {
     width: 1200px;
+    height: 100vh;
+    /* overflow: auto; */
     margin: 0 auto;
 }
 
@@ -135,9 +137,17 @@ ul {
     margin-left: 5px;
 }
 
+#navigation li a:hover{
+    color: steelblue;
+}
+
 .dots-wrapper {
     display: flex;
     padding: 10px;
+}
+
+.dots-wrapper:hover > div {
+    opacity: 0.5;
 }
 
 #dot1 {
@@ -175,8 +185,13 @@ ul {
     width: 250px;
     height: 250px;
     object-fit: cover;
+    transition: transform .5s;
     border-radius: 50%;
     border: 2px solid var(--borderColor);
+}
+
+.profile-pic:hover {
+    transform: scale(1.15);
 }
 
 #theme-wrapper {
@@ -239,12 +254,15 @@ ul {
 }
 
 #preview-shadow {
-    background-color: var(--previewShadow);
+    background-color: white;
     width: 300px;
     height: 180px;
-    padding-left: 30px;
-    padding-top: 30px;
+}
 
+#preview-shadow:hover {
+    background-color: var(--previewShadow);
+    padding-left: 35px;
+    padding-top: 35px;
 }
 
 #preview {
@@ -292,6 +310,10 @@ ul {
     gap: 100px;
 }
 
+.resume:hover {
+    color: steelblue;
+}
+
 #skills {
     display: flex;
     justify-content: space-evenly;
@@ -313,7 +335,20 @@ ul {
     width: 180px;
     height: 180px;
     display: block;
+    transition: transform .5s;
     margin: auto;
+}
+
+#cmu-img:hover {
+    transform: scale(1.1);
+}
+
+#uta-img:hover {
+    transform: scale(1.1);
+}
+
+#iit-img:hover {
+    transform: scale(1.1);
 }
 
 #cmu {
@@ -369,6 +404,10 @@ ul {
 
 .project-link {
     font-size: 14px;
+}
+
+.visit-project:hover {
+    color: steelblue;
 }
 
 #submit-btn{

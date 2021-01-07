@@ -32,7 +32,7 @@
                         </div>
                         <ul id="navigation">
                             <li>
-                                <a href="#">Contact</a>
+                                <a href="#contact-me" class="contact-link">Contact</a>
                             </li>
                         </ul> 
                     </div>
@@ -80,7 +80,7 @@
 
                         <h4>TOP EXPERTISE</h4>
                         <p>Full stack developer with primary focus on this: 
-                            <a target="_blank" href="../utils/Haosong Li Resume.pdf">Download Resume</a>
+                            <a class="resume" target="_blank" href="../utils/Haosong Li Resume.pdf">Download Resume</a>
                         </p>
                     
                         <div id="skills">
@@ -107,17 +107,23 @@
                         <h4>Education</h4>
                         <div class="edu">
                             <div id="cmu">
-                                <img id="cmu-img" src="../utils/images/CMU-seal.svg.png">
+                                <a target="_blank" href="https://www.cmu.edu/">
+                                    <img id="cmu-img" src="../utils/images/CMU-seal.svg.png">
+                                </a>
                                 <h6 style="margin: 15px;">M.S. in Electrical & Computer Engineering</h6>
                                 <p>2020.8 - 2021.12</p>
                             </div>
                             <div id="uta">
-                                <img id="uta-img" src="../utils/images/UTA-seal.svg.png">
+                                <a target="_blank" href="https://www.utexas.edu/">
+                                    <img id="uta-img" src="../utils/images/UTA-seal.svg.png">
+                                </a>
                                 <h6 style="margin: 15px;">B.S. in Electrical & Computer Engineering</h6>
                                 <p>2018.8 - 2020.8</p>
                             </div>
                             <div id="iit">
-                                <img id="iit-img" src="../utils/images/IIT_seal.svg.png">
+                                <a target="_blank" href="https://www.iit.edu/">
+                                    <img id="iit-img" src="../utils/images/IIT_seal.svg.png">
+                                </a>
                                 <h6 style="margin: 15px;">Computer Engineering (Transfer to UT)</h6>
                                 <p>2016.8 - 2018.5</p>
                             </div>
@@ -139,8 +145,8 @@
                             <img class="thumbnail" src="../utils/images/ESN.jpg">
                             <div class="project-preview">
                                 <h6 class="project-title">Emergency Social Network</h6>
-                                <p class="project-intro">Project Intro</p>
-                                <p class="project-link"><a href="https://esn-f20sa1.herokuapp.com/">Visit</a></p>
+                                <p class="project-intro">Providing civilians with a social network that they can use during emergency situations. Our application focuses on wildfire specifically.</p>
+                                <p class="project-link"><a target="_blank" class="visit-project" href="https://esn-f20sa1.herokuapp.com/">Visit</a></p>
                             </div>
                         </div>
                     </div>
@@ -150,8 +156,10 @@
                             <img class="thumbnail" src="../utils/images/researchmatch-logo.jpeg">
                             <div class="project-preview">
                                 <h6 class="project-title">ResearchMatch Website</h6>
-                                <p class="project-intro">Project Intro</p>
-                                <p class="project-link"><a href="https://researchmatch.ece.utexas.edu/">Visit</a></p>
+                                <p class="project-intro">
+                                    Matching students with faculty's posted research opportunities, helping faculty members find desired students (currently only for UT ECE students). 
+                                </p>
+                                <p class="project-link"><a target="_blank" class="visit-project" href="https://researchmatch.ece.utexas.edu/">Visit</a></p>
                             </div>
                         </div>
                     </div>
@@ -172,7 +180,7 @@
         </section>
 
         <section class="s2">
-            <div class="main-container">
+            <div class="main-container" id="contact-me">
                 <h3 style="text-align: center;">Contact Me</h3>
                 <form id="contact-form" action="">
                     <label>Name</label>
@@ -192,6 +200,7 @@
 
             </div>
         </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script type="text/javascript" src="../public/javascript/theme.js"></script>
     </body>
 </html>
