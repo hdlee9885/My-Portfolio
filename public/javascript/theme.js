@@ -18,23 +18,23 @@ for (let i = 0; i < themeDots.length; i++) {
 
 function setTheme(mode) {
     if (mode == 'light') {
-        document.getElementById('theme-style').href = 'portfolio.css';
+        document.getElementById('theme-style').href = '../public/stylesheets/portfolio.css';
     }
 
     if (mode == 'blue') {
-        document.getElementById('theme-style').href = 'blue.css';
+        document.getElementById('theme-style').href = '../public/stylesheets/blue.css';
     }
 
     if (mode == 'green') {
-        document.getElementById('theme-style').href = 'green.css';
+        document.getElementById('theme-style').href = '../public/stylesheets/green.css';
     }
 
     if (mode == 'purple') {
-        document.getElementById('theme-style').href = 'purple.css';
+        document.getElementById('theme-style').href = '../public/stylesheets/purple.css';
     }
 
     if (mode == 'orange') {
-        document.getElementById('theme-style').href = 'orange.css';
+        document.getElementById('theme-style').href = '../public/stylesheets/orange.css';
     }
 
     localStorage.setItem('theme', mode);

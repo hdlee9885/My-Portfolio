@@ -79,19 +79,22 @@ ul {
 .top {
     white-space: nowrap;
     overflow: hidden;    
+}
+
+.anim-type {
     animation: animated-text 4s steps(29,end) 1s 1 normal both,
-             animated-cursor 600ms steps(29,end) infinite;
+               animated-cursor 600ms steps(29,end) infinite;
 }
 
 @keyframes animated-text{
     from{ width: 0; }
-    to{ width: 520px; }
+    to{ width: 100%; }
 }
   
 @keyframes animated-cursor{
-    from{border-right-color: rgba(0,255,0,.75);}
-    to{border-right-color: transparent;}
-  }
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
 
 .intro-wrapper {
     background-color: var(--secondaryColor);
