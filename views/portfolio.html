@@ -9,7 +9,8 @@
         <title>My Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-	    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../public/stylesheets/fullpage.min.css">
         <link rel="stylesheet" type="text/css" href="../public/stylesheets/portfolio.css">
         <link id="theme-style" rel="stylesheet" type="text/css" href="">
     </head>
@@ -17,190 +18,215 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <section class="s1">
-            <div class="main-container">
-                <div class="greeting-wrapper">
-                    <h1 class="top anim-type">Hi, I'm Haosong Li</h1>
-                </div>
-                
-                <div class="intro-wrapper">
-                    <div class="nav-wrapper">
-                        <div class="dots-wrapper">
-                            <div id="dot1" class="browser-dot"></div>
-                            <div id="dot2" class="browser-dot"></div>
-                            <div id="dot3" class="browser-dot"></div>
-                        </div>
-                        <ul id="navigation">
-                            <li>
-                                <a href="#contact-me" class="contact-link">Contact</a>
-                            </li>
-                        </ul> 
-                    </div>
-                    <div class="left-column">
-                        <img class="profile-pic" src="../utils/images/me.jpg">
-                        <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
-
-                        <div id="theme-wrapper">
-                            <div data-mode="light" id="light-mode" class="theme-dot"></div>
-                            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-                            <div data-mode="green" id="green-mode" class="theme-dot"></div>
-                            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-                            <div data-mode="orange" id="orange-mode" class="theme-dot"></div>
-                        </div>
-
-                        <p id="settings-note">*Theme Settings Will Be Saved For Your Next Visit</p>
-                    </div>
-                    <div class="right-column">
-                        <div id="preview-shadow">
-                            <div id="preview">
-                                <div id="corner-tl" class="corner"></div>
-                                <div id="corner-tr" class="corner"></div>
-                                <div id="corner-bl" class="corner"></div>
-                                <div id="corner-br" class="corner"></div>
-                                <h3>What I Do</h3>
-                                <p>I am a first year Master's student at Carnegie Mellon University</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
-            </div>
-        </section>
-
-        <section class="s2">
-            <div class="main-container">
-                <div class="about-wrapper">
-                    <div class="about-me">
-                        <h4>More About Me</h4>
-                        <p>I build everything</p>
-                        <!-- <p>I build that</p> -->
-
-                        <hr>
-
-                        <h4>TOP EXPERTISE</h4>
-                        <p>Full stack developer with primary focus on this: 
-                            <a class="resume" target="_blank" href="../utils/Haosong Li Resume.pdf">Download Resume</a>
-                        </p>
-                    
-                        <div id="skills">
-                            <ul>
-                                <li>Java</li>
-                                <li>C</li>
-                                <li>Python</li>
-                                <li>JavaScript</li>
-                                <li>HTML/CSS</li>
-                                <li>MATLAB</li>
-                            </ul>
-                            <ul>
-                                <li>Node.js</li>
-                                <li>MongoDB</li>
-                                <li>SQL</li>
-                                <li>Flask</li>
-                                <li>Angular</li>
-                                <li>React</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="edu-wrapper">
-                        <h4>Education</h4>
-                        <div class="edu">
-                            <div id="cmu">
-                                <a target="_blank" href="https://www.cmu.edu/">
-                                    <img id="cmu-img" src="../utils/images/CMU-seal.svg.png">
-                                </a>
-                                <h6 style="margin: 15px;">M.S. in Electrical & Computer Engineering</h6>
-                                <p>2020.8 - 2021.12</p>
-                            </div>
-                            <div id="uta">
-                                <a target="_blank" href="https://www.utexas.edu/">
-                                    <img id="uta-img" src="../utils/images/UTA-seal.svg.png">
-                                </a>
-                                <h6 style="margin: 15px;">B.S. in Electrical & Computer Engineering</h6>
-                                <p>2018.8 - 2020.8</p>
-                            </div>
-                            <div id="iit">
-                                <a target="_blank" href="https://www.iit.edu/">
-                                    <img id="iit-img" src="../utils/images/IIT_seal.svg.png">
-                                </a>
-                                <h6 style="margin: 15px;">Computer Engineering (Transfer to UT)</h6>
-                                <p>2016.8 - 2018.5</p>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="s1">
-            <div class="main-container">
-                <h3 style="text-align: center;">My Past Projects</h3>
-                <div class="post-wrapper">
-                    <div>
-                        <div class="post">
-                            <img class="thumbnail" src="../utils/images/ESN.jpg">
-                            <div class="project-preview">
-                                <h6 class="project-title">Emergency Social Network</h6>
-                                <p class="project-intro">Providing civilians with a social network that they can use during emergency situations. Our application focuses on wildfire specifically.</p>
-                                <p class="project-link"><a target="_blank" class="visit-project" href="https://esn-f20sa1.herokuapp.com/">Visit</a></p>
-                            </div>
-                        </div>
+        <!-- <div class="cursor"></div> -->
+        <div id="fullpage">
+            <section class="section s1">
+                <div class="main-container">
+                    <div class="greeting-wrapper">
+                        <h1 class="top anim-type">Hi, I'm Haosong Li</h1>
                     </div>
                     
-                    <div>
-                        <div class="post">
-                            <img class="thumbnail" src="../utils/images/researchmatch-logo.jpeg">
-                            <div class="project-preview">
-                                <h6 class="project-title">ResearchMatch Website</h6>
-                                <p class="project-intro">
-                                    Matching students with faculty's posted research opportunities, helping faculty members find desired students (currently only for UT ECE students). 
-                                </p>
-                                <p class="project-link"><a target="_blank" class="visit-project" href="https://researchmatch.ece.utexas.edu/">Visit</a></p>
+                    <div class="intro-wrapper">
+                        <div class="nav-wrapper">
+                            <div class="dots-wrapper">
+                                <div id="dot1" class="browser-dot"></div>
+                                <div id="dot2" class="browser-dot"></div>
+                                <div id="dot3" class="browser-dot"></div>
+                            </div>
+                            <ul id="navigation">
+                                <li>
+                                    <a href="#contact-me" class="contact-link">Contact</a>
+                                </li>
+                            </ul> 
+                        </div>
+                        <div class="left-column">
+                            <img class="profile-pic" src="../utils/images/me.jpg">
+
+                            <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+    
+                            <div id="theme-wrapper">
+                                <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                                <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                                <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                                <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                                <div data-mode="orange" id="orange-mode" class="theme-dot"></div>
+                            </div>
+    
+                            <p id="settings-note">*Theme Settings Will Be Saved For Your Next Visit</p>
+                        </div>
+                        <div class="right-column">
+                            <div id="preview-shadow">
+                                <div id="preview">
+                                    <div id="corner-tl" class="corner"></div>
+                                    <div id="corner-tr" class="corner"></div>
+                                    <div id="corner-bl" class="corner"></div>
+                                    <div id="corner-br" class="corner"></div>
+                                    <h3>What I Do</h3>
+                                    <p>I am a first year Master's student at Carnegie Mellon University</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    
+                </div>
+            </section>
+    
+            <section class="section s2">
+                <div class="main-container">
+                    <div class="about-wrapper">
+                        <div class="about-me">
+
+                            <h4>Work Experience</h4>
+                            <div class="work">
+                                <div id="ztech">
+                                    <a target="_blank" href="https://ztech.app">
+                                        <img id="ztech-img" src="../utils/images/ztech.png" alt="">
+                                    </a>
+                                    <h6 style="margin: 15px;text-align: center;">Software Engineer Intern</h6>
+                                    <p style="text-align: center;">2020.5 - 2020.8</p>
+                                </div>
+                            </div>
+                            <!-- <p>I build that</p> -->
+    
+                            <hr>
+    
+                            <h4>TOP EXPERTISE</h4>
+                            <p>Full stack developer with primary focus on this: 
+                                <a class="resume" target="_blank" href="../utils/Haosong Li Resume.pdf">Download Resume</a>
+                            </p>
+                        
+                            <div id="skills">
+                                <ul>
+                                    <li>Java</li>
+                                    <li>C</li>
+                                    <li>Python</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML/CSS</li>
+                                    <li>MATLAB</li>
+                                </ul>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>MongoDB</li>
+                                    <li>SQL</li>
+                                    <li>Flask</li>
+                                    <li>Angular</li>
+                                    <li>React</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="edu-wrapper">
+                            <h4>Education</h4>
+                            <div class="edu">
+                                <div id="cmu">
+                                    <a target="_blank" href="https://www.cmu.edu/">
+                                        <img id="cmu-img" src="../utils/images/CMU-seal.svg.png">
+                                    </a>
+                                    <h6 style="margin: 15px;">M.S. in Electrical & Computer Engineering</h6>
+                                    <p>2020.8 - 2021.12</p>
+                                </div>
+                                <div id="uta">
+                                    <a target="_blank" href="https://www.utexas.edu/">
+                                        <img id="uta-img" src="../utils/images/UTA-seal.svg.png">
+                                    </a>
+                                    <h6 style="margin: 15px;">B.S. in Electrical & Computer Engineering</h6>
+                                    <p>2018.8 - 2020.8</p>
+                                </div>
+                                <div id="iit">
+                                    <a target="_blank" href="https://www.iit.edu/">
+                                        <img id="iit-img" src="../utils/images/IIT_seal.svg.png">
+                                    </a>
+                                    <h6 style="margin: 15px;">Computer Engineering (Transfer to UT)</h6>
+                                    <p>2016.8 - 2018.5</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div>
-                        <div class="post">
-                            <img class="thumbnail" src="../utils/images/ESN.jpg">
-                            <div class="project-preview">
-                                <h6 class="project-title">Project Title</h6>
-                                <p class="project-intro">Project Intro</p>
+    
+                </div>
+            </section>
+    
+            <section class="section s1">
+                <div style="padding-top: 50px;" class="main-container">
+                    <h3 id="project-title" style="text-align: center;">My Past Projects</h3>
+                    <div class="project-wrapper">
+                        <div>
+                            <div class="project">
+                                <img class="thumbnail" src="../utils/images/ESN.jpg">
+                                <div class="project-preview">
+                                    <h6 class="project-title">Emergency Social Network</h6>
+                                    <p class="project-intro">Providing civilians with a social network that they can use during emergency situations. Our application focuses on wildfire specifically.</p>
+                                    <p class="project-link"><a target="_blank" class="visit-project" href="https://esn-f20sa1.herokuapp.com/">Visit</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div> -->
-
+                        
+                        <div>
+                            <div class="project">
+                                <img class="thumbnail" src="../utils/images/researchmatch-logo.jpeg">
+                                <div class="project-preview">
+                                    <h6 class="project-title">ResearchMatch Website</h6>
+                                    <p class="project-intro">
+                                        Matching students with faculty's posted research opportunities, helping faculty members find desired students (currently only for UT ECE students). 
+                                    </p>
+                                    <p class="project-link"><a target="_blank" class="visit-project" href="https://researchmatch.ece.utexas.edu/">Visit</a></p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- <div>
+                            <div class="project">
+                                <img class="thumbnail" src="../utils/images/ESN.jpg">
+                                <div class="project-preview">
+                                    <h6 class="project-title">Project Title</h6>
+                                    <p class="project-intro">Project Intro</p>
+                                </div>
+                            </div>
+                        </div> -->
+    
+                    </div>
+                    
                 </div>
-                
-            </div>
-        </section>
-
-        <section class="s2">
-            <div class="main-container" id="contact-me">
-                <h3 style="text-align: center;">Contact Me</h3>
-                <form id="contact-form" action="">
-                    <label>Name</label>
-                    <input type="text" class="input-field" name="Name">
-
-                    <label>Subject</label>
-                    <input type="text" class="input-field" name="Subject">
-
-                    <label>Email</label>
-                    <input type="text" class="input-field" name="Email">
-
-                    <label>Message</label>
-                    <textarea type="text" class="input-field" name="Message"></textarea>
-            
-                    <input type="submit" value="Send" id="submit-btn">
-                </form>
-
-            </div>
-        </section>
+            </section>
+    
+            <section class="section s2">
+                <div style="padding-top: 50px;" class="main-container" id="contact-me">
+                    <h3 id="contact-title" style="text-align: center;">Contact Me</h3>
+                    <div class="form-wrapper">
+                        <form id="contact-form" action="">
+                            <label>Name</label>
+                            <input type="text" class="input-field" name="Name">
+        
+                            <label>Subject</label>
+                            <input type="text" class="input-field" name="Subject">
+        
+                            <label>Email</label>
+                            <input type="text" class="input-field" name="Email">
+        
+                            <label>Message</label>
+                            <textarea type="text" class="input-field" name="Message"></textarea>
+                    
+                            <input type="submit" value="Send" id="submit-btn">
+                        </form>
+                    </div>
+    
+                </div>
+            </section>
+        </div>
+        <script src="../public/javascript/fullpage.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+        crossorigin="anonymous"
+        ></script>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+        crossorigin="anonymous"
+        ></script>
         <script type="text/javascript" src="../public/javascript/theme.js"></script>
     </body>
 </html>

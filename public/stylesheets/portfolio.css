@@ -50,6 +50,18 @@ ul {
     list-style: none;
 }
 
+/* .cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+} */
+
 .s1 {
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
@@ -251,12 +263,14 @@ ul {
     align-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 50px;
 }
 
 #preview-shadow {
     background-color: var(--secondaryColor);
     width: 300px;
     height: 180px;
+    border-radius: 5%;
 }
 
 #preview-shadow:hover {
@@ -331,6 +345,31 @@ ul {
     gap: 20px;
 }
 
+.work {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'ztech';
+    align-content: center;
+    text-align: center;
+}
+
+#ztech {
+    grid-area: ztech;
+}
+
+#ztech-img {
+    width: 180px;
+    height: 180px;
+    display: block;
+    border-radius: 50%;
+    transition: transform .5s;
+    margin: auto;
+}
+
+#ztech-img:hover {
+    transform: scale(1.1);
+}
+
 #uta-img, #cmu-img, #iit-img {
     width: 180px;
     height: 180px;
@@ -363,7 +402,7 @@ ul {
     grid-area: iit;
 }
 
-.post-wrapper {
+.project-wrapper {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(auto-fit, 320px);
@@ -379,7 +418,7 @@ ul {
     object-fit: cover;
 }
 
-.post {
+.project {
     border: 1px solid var(--borderColor);
     -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
