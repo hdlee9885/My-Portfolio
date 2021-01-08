@@ -9,7 +9,7 @@
 
     --themeDotBorder:#24292e;
     --previewBG: rgb(251, 249, 243, 0.8);
-    --previewShadow: #f0ead6;
+    --previewShadow: #f8f1d9;
 
     --submitBtn: black;
 }
@@ -254,7 +254,7 @@ ul {
 }
 
 #preview-shadow {
-    background-color: white;
+    background-color: var(--secondaryColor);
     width: 300px;
     height: 180px;
 }
