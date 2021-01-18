@@ -10,6 +10,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
         <link rel="stylesheet" href="../public/stylesheets/fullpage.min.css">
         <link rel="stylesheet" type="text/css" href="../public/stylesheets/portfolio.css">
         <link id="theme-style" rel="stylesheet" type="text/css" href="">
@@ -33,16 +35,27 @@
                                 <div id="dot2" class="browser-dot"></div>
                                 <div id="dot3" class="browser-dot"></div>
                             </div>
-                            <!-- <ul id="navigation">
+                            <ul id="navigation">
                                 <li>
-                                    <a href="#contact-me" class="contact-link">Contact</a>
+                                    <a target="_blank" 
+                                        href="https://www.linkedin.com/in/haosong-li-hl/" 
+                                        class="contact-link">LinkedIn
+                                    </a>
                                 </li>
-                            </ul>  -->
+                                <li>
+                                    <a target="_blank" 
+                                        href="https://github.com/hdlee9885" 
+                                        class="contact-link">GitHub
+                                    </a>
+                                </li>
+                            </ul> 
                         </div>
                         <div class="left-column">
                             <img class="profile-pic" src="../utils/images/me.jpg">
 
-                            <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+                            <h5 style="text-align: center; line-height: 0; padding-top: 15px;">
+                                Personalize Theme
+                            </h5>
     
                             <div id="theme-wrapper">
                                 <div data-mode="light" id="light-mode" class="theme-dot"></div>
@@ -150,37 +163,49 @@
     
             <section class="section s1">
                 <div style="padding-top: 50px;" class="main-container">
-                    <h3 id="project-title" style="text-align: center;">My Past Projects</h3>
-                    <div class="project-wrapper">
-                        <div class="project-container">
-                            <div class="project">
-                                <div class="project-img">
-                                    <img class="thumbnail" src="../utils/images/ESN.jpg">
+                    <div class="container-fluid contenedor text-center">
+                        <h3 class="text-center project-title">My Past Projects</h1>
+                        <div class="container text-center">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto ">
+                                <div class="ver_mas text-center">
+                                    <a target="_blank" class="project-link" href="https://esn-f20sa1.herokuapp.com/">
+                                        <span class="lnr lnr-eye"></span>
+                                    </a>
                                 </div>
-                                <div class="project-preview">
-                                    <h6 class="project-title">Emergency Social Network</h6>
-                                    <p class="project-intro">
-                                        Providing civilians with a social network that they can use during emergency situations. Our application focuses on wildfire specifically.
-                                    </p>
-                                    <button class="project-link"><a target="_blank" class="visit-project" href="https://esn-f20sa1.herokuapp.com/">Visit</a></button>
+                                <article class="text-left">
+                                    <h3>Wildfire <br>Social Network</h3>
+                                    <!-- <h4>Descripción corta de la imagen en cuestión</h4> -->
+                                </article>
+                                <img src="../utils/images/ESN.jpg" alt="">
+                            </div>
+            
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                                <div class="ver_mas text-center">
+                                    <a target="_blank" class="project-link" href="https://researchmatch.ece.utexas.edu/">
+                                        <span class="lnr lnr-eye"></span>
+                                    </a>
                                 </div>
+                                <article class="text-left">
+                                    <h3>ResearchMatch <br>Website</h3>
+                                    <!-- <h4>Descripción corta de la imagen en cuestión</h4> -->
+                                </article>
+                                <img src="../utils/images/researchmatch-logo.jpeg" alt="">
+                            </div>
+            
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto">
+                                <div class="ver_mas text-center">
+                                    <a target="_blank" class="project-link" href="https://covid-19-tracker-9885.web.app/">
+                                        <span class="lnr lnr-eye"></span>
+                                    </a>
+                                </div>
+                                <article class="text-left">
+                                    <h3>COVID-19 <br>Tracker</h3>
+                                    <!-- <h4>Descripción corta de la imagen en cuestión</h4> -->
+                                </article>
+                                <img src="../utils/images/covid.png" alt="">
                             </div>
                         </div>
-                        
-                        <div class="project-container">
-                            <div class="project">
-                                <div class="project-img">
-                                    <img class="thumbnail" src="../utils/images/researchmatch-logo.jpeg">
-                                </div>
-                                <div class="project-preview">
-                                    <h6 class="project-title">ResearchMatch Website</h6>
-                                    <p class="project-intro">
-                                        Matching students with faculty's posted research opportunities, helping faculty members find desired students (currently only for UT ECE students). 
-                                    </p>
-                                    <button class="project-link"><a target="_blank" class="visit-project" href="https://researchmatch.ece.utexas.edu/">Visit</a></button>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
     
                         <!-- <div>
                             <div class="project">
@@ -192,7 +217,7 @@
                             </div>
                         </div> -->
     
-                    </div>
+                    <!-- </div> -->
                     
                 </div>
             </section>

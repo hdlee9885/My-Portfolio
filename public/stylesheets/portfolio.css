@@ -50,18 +50,6 @@ ul {
     list-style: none;
 }
 
-/* .cursor {
-    width: 3rem;
-    height: 3rem;
-    border: 2px solid black;
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: all 0.3s ease;
-    transition-property: background, transform;
-} */
-
 .s1 {
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
@@ -151,6 +139,11 @@ ul {
 
 #navigation li a:hover{
     color: steelblue;
+    text-decoration: none;
+}
+
+.contact-link {
+    text-decoration: none;
 }
 
 .dots-wrapper {
@@ -218,7 +211,7 @@ ul {
     border-radius: 50%;
 
     margin: 5px;
-	border:2px solid var(--themeDotBorder);
+	border: 2px solid var(--themeDotBorder);
 
 	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -229,6 +222,7 @@ ul {
 
 .theme-dot:hover {
     border-width: 5px;
+    transform: scale(1.1);
 }
 
 #light-mode {
@@ -326,6 +320,7 @@ ul {
 
 .resume:hover {
     color: steelblue;
+    text-decoration: none;
 }
 
 #skills {
@@ -444,9 +439,10 @@ ul {
 }
 
 .project-title {
-    color: black;
+    color: var(--mainText);
     margin: 0;
-    padding-top: 5px;
+    /* padding-top: 5px; */
+    padding-bottom: 20px;
     transition: all 0.75s ease-out;
 }
 
@@ -466,7 +462,7 @@ ul {
     color: #fff;
     cursor: pointer;
     font-weight: bold;
-	background-color: var(--submitBtn);
+	/* background-color: var(--submitBtn); */
     border: none;
     transition: all 0.75s ease-out;
 }
@@ -478,6 +474,116 @@ ul {
 .visit-project:hover {
     color: var(--mainText);
 }
+
+.contenedor {
+	height: 100vh;
+    padding: 5% 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_foto {
+	background-color: rgba(57, 62, 93, 0.7);
+	padding: 0;
+	overflow: hidden;
+	max-width: 350px;
+	margin: 5px;
+}
+
+.container_foto article {
+	padding: 10%;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.container_foto h3 {
+    color: var(--secondaryText);
+	font-weight: 600;
+	font-size: 25px;
+	border-bottom: var(--secondaryText) solid 1px;
+}
+
+.container_foto h4 {
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.container_foto img {
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.4;
+	-webkit-transition: all 4s ease;
+	-moz-transition: all 4s ease;
+	-o-transition: all 4s ease;
+	-ms-transition: all 4s ease;
+	transition: all 4s ease;
+}
+
+.ver_mas {
+	background-color: #FEB66C;
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	bottom: 0;
+	z-index: 1;
+	opacity: 0;
+	transform: translate(0px, 70px);
+	-webkit-transform: translate(0px, 70px);
+	-moz-transform: translate(0px, 70px);
+	-o-transform: translate(0px, 70px);
+	-ms-transform: translate(0px, 70px);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.ver_mas span {
+	font-size: 40px;
+	color: #fff;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+    top: 13px;
+    text-decoration: none;
+}
+
+/*hovers*/
+
+.container_foto:hover {
+	cursor: pointer;
+}
+
+.container_foto:hover img {
+	opacity: 0.1;
+	transform: scale(1.5);
+}
+
+.container_foto:hover article {
+	transform: translate(2px, -69px);
+	-webkit-transform: translate(2px, -69px);
+	-moz-transform: translate(2px, -69px);
+	-o-transform: translate(2px, -69px);
+	-ms-transform: translate(2px, -69px);
+}
+
+.container_foto:hover .ver_mas {
+	transform: translate(0px, 0px);
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	opacity: 1;
+}
+
 
 #submit-btn{
     margin-top: 10px;
