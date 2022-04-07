@@ -343,9 +343,26 @@ ul {
 .work {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 'ztech';
+    grid-template-areas: 'meta slb ztech';
     align-content: center;
     text-align: center;
+}
+
+#meta {
+    grid-area: meta;
+}
+
+#meta-img {
+    width: 180px;
+    height: 180px;
+    display: block;
+    border-radius: 50%;
+    transition: transform .5s;
+    margin: auto;
+}
+
+#meta-img:hover {
+    transform: scale(1.1);
 }
 
 #ztech {
@@ -362,6 +379,23 @@ ul {
 }
 
 #ztech-img:hover {
+    transform: scale(1.1);
+}
+
+#slb {
+    grid-area: slb;
+}
+
+#slb-img {
+    width: 180px;
+    height: 180px;
+    display: block;
+    border-radius: 50%;
+    transition: transform .5s;
+    margin: auto;
+}
+
+#slb-img:hover {
     transform: scale(1.1);
 }
 
